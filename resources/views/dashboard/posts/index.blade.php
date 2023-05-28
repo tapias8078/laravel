@@ -14,7 +14,7 @@
             @foreach($posts as $p)
                 <tr>
                     <td>{{$p->title}}</td>
-                    <td>{{$p->category_id->title}}</td>
+                    <td>{{$p->category->title}}</td>
                     <td>{{$p->posted}}</td>
                     <tr>
                         <a class="btn btn-primary" href="{{route('post.edit',$p)}}">Editar</a>
